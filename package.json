@@ -3,6 +3,28 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "Uma aplicação interativa para apresentação de conteúdo sobre Educação, Ciência e Tecnologia no Brasil com suporte multilíngue (PT, JP, EN)",
+  "author": {
+    "name": "Gustavo Sales",
+    "email": "dev.gussales@gmail.com",
+    "url": "https://gusales.vercel.app/"
+  },
+  "contributors": [
+    {
+      "name": "Gustavo Sales",
+      "email": "dev.gussales@gmail.com",
+      "url": "https://gusales.vercel.app/",
+      "role": "Maintainer"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gusales/koshukai-presentation"
+  },
+  "homepage": "https://koshukai-presentation.vercel.app/",
+  "engines": {
+    "node": "22"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
