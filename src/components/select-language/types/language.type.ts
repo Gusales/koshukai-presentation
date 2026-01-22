@@ -1,1 +1,1 @@
-export type LanguageType = "jp" | "en" | "br";
+export type LanguageType = "jp" | "en" | "pt";

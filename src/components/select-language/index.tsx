@@ -1,12 +1,13 @@
-import type {LanguageType} from "./types";
-import {useState} from "react";
-import {useTranslation} from "react-i18next";
+/* eslint-disable react-refresh/only-export-components */
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import type { LanguageType } from "./types";
 
 export const INITIAL_LANGUAGE: LanguageType = 'jp';
 export const LANGUAGE_LABELS: Record<LanguageType, string> = {
     'jp': '日本語',
     'en': 'English',
-    'br': 'Português'
+    'pt': 'Português'
 }
 
 export const SelectLanguage = () => {
@@ -15,15 +16,18 @@ export const SelectLanguage = () => {
 
     async function handleSetTranslation(value: LanguageType) {
         setLanguage(value)
+        localStorage.setItem('lang', value)
         await lang.changeLanguage(value)
     }
     return (
-        <select>
+        <select value={language} onChange={(event) => handleSetTranslation(event.target.value as LanguageType)}>
             {
-                ((Object.entries(LANGUAGE_LABELS) as [LanguageType, string][]).map(([key, value]) => {
-                    <option key={key} value={key}>
+                Object.entries(LANGUAGE_LABELS).map(([key, value]) => {
+                   return (
+                     <option key={key} value={key} selected={key === INITIAL_LANGUAGE}>
                         {value}
                     </option>
+                   )
                 })
             }
         </select>
