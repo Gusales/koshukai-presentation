@@ -1,6 +1,7 @@
 import { KoiBackground } from "../../components/koi";
 import { SelectLanguage } from "../../components/select-language/index.tsx";
 import { useStep } from "../../hooks/use-step.ts";
+import { EducationView } from "./education-view.tsx";
 import { IntroductionView } from "./introduction-view.tsx";
 
 export const PublicView = () => {
@@ -11,7 +12,7 @@ export const PublicView = () => {
             case 0:
                 return <IntroductionView />
             case 1:
-                return <h1>{step}</h1>
+                return <EducationView />
             case 2:
                 return <h1>{step}</h1>
             case 3:

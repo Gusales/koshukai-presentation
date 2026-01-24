@@ -4,6 +4,31 @@
             "title": "ブラジルの教育、科学、技術",
             "subTitle": "革新と発展の旅路",
             "action": "ようこそ"
+        },
+        "education": {
+            "title": "ブラジルの教育システム",
+            "subTitle": "4段階の教育システム",
+            "action": "地域・経済格差による教育アクセスの課題",
+            "preschool": {
+                "title": "幼児教育",
+                "description": "0〜5歳 (5年間)",
+                "details": "Etapa fundamental de educação para crianças de 0 a 5 anos, focando na aprendizagem através de brincadeiras e desenvolvimento social."
+            },
+            "elementary": {
+                "title": "初等教育",
+                "description": "6〜14歳 (9年間)",
+                "details": "Educação obrigatória de 9 anos para idades de 6 a 14 anos, abrangendo alfabetização, matemática, ciências e estudos sociais."
+            },
+            "secondary": {
+                "title": "中等教育",
+                "description": "15〜17歳 (3年間)",
+                "details": "Educação de 3 anos para idades de 15 a 17 anos, preparando estudantes para exames vestibulares (ENEM) e formação profissional."
+            },
+            "higher": {
+                "title": "高等教育",
+                "description": "公立大学は無料",
+                "details": "Etapa de educação universitária. Universidades públicas são gratuitas e oferecem pesquisa de alto nível e educação profissional. Mais de 8 milhões de estudantes matriculados."
+            }
         }
     }
 }

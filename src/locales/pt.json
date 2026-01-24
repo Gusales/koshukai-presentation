@@ -4,6 +4,31 @@
             "title": "Educação, Ciência e Tecnologia no Brasil",
             "subTitle": "Uma Jornada de Inovação e Desenvolvimento",
             "action": "Bem-vindo"
+        },
+        "education": {
+            "title": "Sistema Educacional Brasileiro",
+            "subTitle": "Sistema de Educação em 4 Etapas",
+            "action": "Desafios no Acesso Educacional por Disparidades Regionais e Econômicas",
+            "preschool": {
+                "title": "Educação Infantil (Pré-Escola)",
+                "description": "Idades 0-5 (5 anos)",
+                "details": "Etapa fundamental de educação para crianças de 0 a 5 anos, focando na aprendizagem através de brincadeiras e desenvolvimento social."
+            },
+            "elementary": {
+                "title": "Ensino Fundamental",
+                "description": "Idades 6-14 (9 anos)",
+                "details": "Educação obrigatória de 9 anos para idades de 6 a 14 anos, abrangendo alfabetização, matemática, ciências e estudos sociais."
+            },
+            "secondary": {
+                "title": "Ensino Médio",
+                "description": "Idades 15-17 (3 anos)",
+                "details": "Educação de 3 anos para idades de 15 a 17 anos, preparando estudantes para exames vestibulares (ENEM) e formação profissional."
+            },
+            "higher": {
+                "title": "Ensino Superior",
+                "description": "Universidades Públicas Gratuitas",
+                "details": "Etapa de educação universitária. Universidades públicas são gratuitas e oferecem pesquisa de alto nível e educação profissional. Mais de 8 milhões de estudantes matriculados."
+            }
         }
     }
 }

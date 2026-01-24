@@ -4,6 +4,31 @@
             "title": "Education, Science and Technology in Brazil",
             "subTitle": "A Journey of Innovation and Development",
             "action": "Welcome"
+        },
+        "education": {
+            "title": "Brazilian Educational System",
+            "subTitle": "Four-stage Educational System",
+            "action": "Challenges in Educational Access Due to Regional and Economic Disparities",
+            "preschool": {
+                "title": "Early Childhood",
+                "description": "Ages 0-5 (5 years)",
+                "details": "Etapa fundamental de educação para crianças de 0 a 5 anos, focando na aprendizagem através de brincadeiras e desenvolvimento social."
+            },
+            "elementary": {
+                "title": "Primary Education",
+                "description": "Ages 6-14 (9 years)",
+                "details": "Educação obrigatória de 9 anos para idades de 6 a 14 anos, abrangendo alfabetização, matemática, ciências e estudos sociais."
+            },
+            "secondary": {
+                "title": "Secondary Education",
+                "description": "Ages 15-17 (3 years)",
+                "details": "Educação de 3 anos para idades de 15 a 17 anos, preparando estudantes para exames vestibulares (ENEM) e formação profissional."
+            },
+            "higher": {
+                "title": "Higher Education",
+                "description": "Public Universities are Free",
+                "details": "Etapa de educação universitária. Universidades públicas são gratuitas e oferecem pesquisa de alto nível e educação profissional. Mais de 8 milhões de estudantes matriculados."
+            }
         }
     }
 }
