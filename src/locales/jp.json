@@ -29,6 +29,19 @@
                 "description": "公立大学は無料",
                 "details": "Etapa de educação universitária. Universidades públicas são gratuitas e oferecem pesquisa de alto nível e educação profissional. Mais de 8 milhões de estudantes matriculados."
             }
+        },
+        "university": {
+            "title": "ブラジルの主要大学",
+            "subTitle": "研究と教育の卓越性",
+            "action": "医学、工学、農学分野の高水準研究",
+            "USP": {
+                "name": "サンパウロ大学 (USP)",
+                "description": "東京大学に匹敵する規模と研究分の広さ"
+            },
+            "UNICAMP": {
+                "name": "カンピーナス州立大学 (UNICAMP)",
+                "description": "京都大学に類似した理工系重点研究大学"
+            }
         }
     }
 }

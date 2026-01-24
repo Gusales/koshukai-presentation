@@ -1,7 +1,7 @@
 export const Steps = [
     'INTRODUCTION',
     'EDUCATION',
-    'UNIVERSSITY',
+    'UNIVERSITY',
     'SCIENCE',
     'ENGENIEER',
     'TECNOLOGY',

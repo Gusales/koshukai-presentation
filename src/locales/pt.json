@@ -29,6 +29,19 @@
                 "description": "Universidades Públicas Gratuitas",
                 "details": "Etapa de educação universitária. Universidades públicas são gratuitas e oferecem pesquisa de alto nível e educação profissional. Mais de 8 milhões de estudantes matriculados."
             }
+        },
+        "university": {
+            "title": "Principais Universidades Brasileiras",
+            "subTitle": "Excelência em Pesquisa e Educação",
+            "action": "Pesquisa de alto nível em medicina, engenharia e agricultura",
+            "USP": {
+                "name": "Universidade de São Paulo (USP)",
+                "description": "Comparável à Universidade de Tóqui em escala e abrangência de pesquisa"
+            },
+            "UNICAMP": {
+                "name": "Universidade Estadual de Campinas (UNICAMP)",
+                "description": "Universidade orientada à pesquisa, similar à Universidade de Kyoto, com ênfase em ciência e engenharia"
+            }
         }
     }
 }

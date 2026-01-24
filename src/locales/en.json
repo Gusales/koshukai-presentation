@@ -29,6 +29,19 @@
                 "description": "Public Universities are Free",
                 "details": "Etapa de educação universitária. Universidades públicas são gratuitas e oferecem pesquisa de alto nível e educação profissional. Mais de 8 milhões de estudantes matriculados."
             }
+        },
+        "university": {
+            "title": "Leading Brazilian Universities",
+            "subTitle": "Excellence in Research and Education",
+            "action": "High-level research in medicine, engineering and agriculture",
+            "USP": {
+                "name": "University of São Paulo (USP)",
+                "description": "Comparable to the University of Tokyo in scale and research breadth"
+            },
+            "UNICAMP": {
+                "name": "State University of Campinas (UNICAMP)",
+                "description": "Research-oriented university, similat to Kyoto University, with emphasis on science and engineering"
+            }
         }
     }
 }
