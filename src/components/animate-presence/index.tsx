@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion"
 import type { ReactNode } from "react"
 
-export function PresentationSection({ children, key }: { children: ReactNode, key: string }) {
+export function PresentationSection({ children, key, className }: { children: ReactNode, key: string, className?: string }) {
     return (
     <AnimatePresence mode="wait">
         <motion.div
@@ -13,7 +13,7 @@ export function PresentationSection({ children, key }: { children: ReactNode, ke
             duration: 0.6,
             ease: [0.22, 1, 0.36, 1]
           }}
-          className="w-full h-full flex items-center justify-center p-8 md:p-16"
+          className={`w-full h-full flex items-center justify-center p-8 md:p-16 ${className || ''}`}
         >
           {children}
         </motion.div>

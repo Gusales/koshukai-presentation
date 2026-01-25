@@ -70,6 +70,18 @@
                 "title": "Civil Engineering",
                 "description": "Itaipu Dam - Internationally significant large-scale infrastructure"
             }
+        },
+        "technology": {
+            "title": "Applied Technology and Digital Transformation",
+            "subTitle": "Vibrant Startup Ecosystem",
+            "links": {
+                "space": "Space & Meteorology - INPE/CPTEC, Astronaut Marcos Pontes",
+                "pix": "PIX - Instant payment system (similiar to PayPay)",
+                "curitiba": "Curitiba - Internationally recognizes smart city in 2023",
+                "superpc": "Supercomputer 'Jaci' for weather and climate analysis",
+                "scala": "Scala Data Centers - One of Latin America's larget data centers",
+                "mecatronica": "Mechatronics and automation technologies"
+            }
         }
     }
 }

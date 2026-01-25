@@ -6,6 +6,7 @@ import { EducationView } from "./education-view.tsx";
 import { EngenieeringView } from "./engineering-view.tsx";
 import { IntroductionView } from "./introduction-view.tsx";
 import { ScienceView } from "./science-view.tsx";
+import { TechnologyView } from "./technology-view.tsx";
 import { UniversityView } from "./university-view.tsx";
 
 export const PublicView = () => {
@@ -24,7 +25,7 @@ export const PublicView = () => {
             case 4:
                 return <EngenieeringView />
             case 5:
-                return <h1>{step}</h1>
+                return <TechnologyView />
             case 6:
                 return <h1>{step}</h1>
             default:

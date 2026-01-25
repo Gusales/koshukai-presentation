@@ -70,6 +70,18 @@
                 "title": "土木工学",
                 "description": "イタイプダム - 国際的に重要な大規模インフラ"
             }
+        },
+        "technology": {
+            "title": "応用技術とデジタル変革",
+            "subTitle": "活発なスタートアップエコシステム",
+            "links": {
+                "space": "宇宙・気象 - INPE/CPTEC、マルコス・ポンテス宇宙飛行士",
+                "pix": "PIX - 即時決済システム (PayPayに類似)",
+                "curitiba": "クリチバ - 2023年国際認定スマートシティ",
+                "superpc": "スーパーコンピュータ「Jaci」による気象・気候解析",
+                "scala": "Scala Data Centers - 中南米最大級のデータセンター",
+                "mecatronica": "メカトロニクス・自動化技術"
+            }
         }
     }
 }

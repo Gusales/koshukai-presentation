@@ -70,6 +70,18 @@
                 "title": "Engenharia Civil",
                 "description": "Usina de Itaipu - Infraestrutura de grande escala internacionalmente significativa"
             }
+        },
+        "technology": {
+            "title": "Tecnologia Aplicada e Tranformação Digital",
+            "subTitle": "Ecossistema de Startups Vibrante",
+            "links": {
+                "space": "Espaço e Meteorologia - INPE/CPTEC, Astronauta Marcos Pontes",
+                "pix": "PIX - Sistema de pagamentos instantâneo (Similar ao PayPay)",
+                "curitiba": "Curitiba - Cidade inteligente reconhecida internacionalmente em 2023",
+                "superpc": "Supercomputador 'Jaci' para análise meteorológica e climática",
+                "scala": "Scala Data Centers - Um dos maiores data centers da América Latina",
+                "mecatronica": "Tecnologias de mecatrônica e automação"
+            }
         }
     }
 }
