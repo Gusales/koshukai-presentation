@@ -15,7 +15,7 @@
                 "details": "Etapa fundamental de educação para crianças de 0 a 5 anos, focando na aprendizagem através de brincadeiras e desenvolvimento social."
             },
             "elementary": {
-                "title": "初等教育",
+                "title": "初/等教育",
                 "description": "6〜14歳 (9年間)",
                 "details": "Educação obrigatória de 9 anos para idades de 6 a 14 anos, abrangendo alfabetização, matemática, ciências e estudos sociais."
             },
@@ -41,6 +41,21 @@
             "UNICAMP": {
                 "name": "カンピーナス州立大学 (UNICAMP)",
                 "description": "京都大学に類似した理工系重点研究大学"
+            }
+        },
+        "science": {
+            "title": "科学研究と革新",
+            "subTitle": "グローバルな影響",
+            "action": "実用的応用に重点を置いた研究",
+            "sections": {
+                "agricultural": {
+                    "title": "農業科学",
+                    "description": "Embrapa - 熱帯地域の農業技術と土壌改良"
+                },
+                "medicine": {
+                    "title": "健康と医学",
+                    "description": "ブタンタン研究所・Fiocruz - ワクチンと感染症研究"
+                }
             }
         }
     }

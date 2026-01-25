@@ -16,13 +16,13 @@ export const UniversityView = () => {
                 <section className="grid md:grid-cols-2 gap-6">
                     <UniversityCard
                         description={t('university.USP.description')}
-                        imageAlt={t('university.USP.name').split(" ")[0]}
+                        imageAlt={t('university.USP.name')}
                         imageUrl="https://imagens.usp.br/wp-content/uploads/Praca-do-Relogio_249-24_Foto-Cecilia-Bastos_USP-Imagens-20-Editar.jpg"
                         name={t('university.USP.name')}
                     />
                     <UniversityCard
                         description={t('university.UNICAMP.description')}
-                        imageAlt={t('university.UNICAMP.name').split(" ")[0]}
+                        imageAlt={t('university.UNICAMP.name')}
                         imageUrl="https://unicamp.br/unicamp/sites/default/files/banco_imagens/2018/06/14/foto_entrada_unicamp_perri_DSC_0196_0.JPG"
                         name={t('university.UNICAMP.name')}
                     />

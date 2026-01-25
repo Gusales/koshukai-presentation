@@ -42,6 +42,21 @@
                 "name": "Universidade Estadual de Campinas (UNICAMP)",
                 "description": "Universidade orientada à pesquisa, similar à Universidade de Kyoto, com ênfase em ciência e engenharia"
             }
+        },
+        "science": {
+            "title": "Pesquisa Científica e Inovação",
+            "subTitle": "Impacto Global",
+            "action": "Pesquisa focada em aplicações práticas",
+            "sections": {
+                "agricultural": {
+                    "title": "Ciências Agrícolas",
+                    "description": "Embrapa - Tecnologias agrícolas para regiões tropicais e melhoria do solo"
+                },
+                "medicine": {
+                    "title": "Saúde e Medicina",
+                    "description": "Instituto Butantan e Fiocruz - Pesquisa em vacinas e doenças infecciosas"
+                }
+            }
         }
     }
 }

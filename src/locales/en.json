@@ -42,6 +42,21 @@
                 "name": "State University of Campinas (UNICAMP)",
                 "description": "Research-oriented university, similat to Kyoto University, with emphasis on science and engineering"
             }
+        },
+        "science": {
+            "title": "Scientific Research and Innovation",
+            "subTitle": "Global Impact",
+            "action": "Research focused on practical applications",
+            "sections": {
+                "agricultural": {
+                    "title": "Agricultural Sciences",
+                    "description": "Embrapa - Agricultural technologies for tropical regions and soil improvement"
+                },
+                "medicine": {
+                    "title": "Health and Medicine",
+                    "description": "Instituto Butantan e Fiocruz - Pesquisa em vacinas e doenças infecciosas"
+                }
+            }
         }
     }
 }
