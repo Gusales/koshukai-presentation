@@ -57,6 +57,19 @@
                     "description": "Instituto Butantan e Fiocruz - Pesquisa em vacinas e doenças infecciosas"
                 }
             }
+        },
+        "engineering": {
+            "title": "Engineering Advancements",
+            "subTitle": "Innovation for Sustainable Development",
+            "action": "Advanced mechanical engineering and systems design",
+            "aerospace": {
+                "title": "Aerospace Engineering",
+                "description": "Embraer - Global leader in regional aircraft market"
+            },
+            "civil": {
+                "title": "Civil Engineering",
+                "description": "Itaipu Dam - Internationally significant large-scale infrastructure"
+            }
         }
     }
 }

@@ -57,6 +57,19 @@
                     "description": "ブタンタン研究所・Fiocruz - ワクチンと感染症研究"
                 }
             }
+        },
+        "engineering": {
+            "title": "エンジニアリングの進歩",
+            "subTitle": "持続可能な開発のための革新",
+            "action": "先進的な機械工学とシステム設計",
+            "aerospace": {
+                "title": "航空宇宙工学",
+                "description": "Embraer - 世界的なリージョナル航空機メーカー"
+            },
+            "civil": {
+                "title": "土木工学",
+                "description": "イタイプダム - 国際的に重要な大規模インフラ"
+            }
         }
     }
 }

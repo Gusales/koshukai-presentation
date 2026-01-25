@@ -57,6 +57,19 @@
                     "description": "Instituto Butantan e Fiocruz - Pesquisa em vacinas e doenças infecciosas"
                 }
             }
+        },
+        "engineering": {
+            "title": "Avanços em Engenharia",
+            "subTitle": "Inovação para o Desenvolvimento Sustentável",
+            "action": "Engenharia mecânica avançada e design de sistemas",
+            "aerospace": {
+                "title": "Engenharia Aeroespacial",
+                "description": "Embraer - Líder global no mercado de aeronaves regionais"
+            },
+            "civil": {
+                "title": "Engenharia Civil",
+                "description": "Usina de Itaipu - Infraestrutura de grande escala internacionalmente significativa"
+            }
         }
     }
 }
