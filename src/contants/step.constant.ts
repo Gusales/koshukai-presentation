@@ -1,9 +1,9 @@
 export const Steps = [
-    'INTRODUCTION',
-    'EDUCATION',
-    'UNIVERSITY',
-    'SCIENCE',
-    'ENGENIEER',
-    'TECNOLOGY',
-    'CONCLUSION'
-]
+    'Introdução',
+    'Sistema Educacional',
+    'Universidades',
+    'Ciência',
+    'Engenharia',
+    'Tecnologia Aplicada',
+    'Conclusão'
+] as const

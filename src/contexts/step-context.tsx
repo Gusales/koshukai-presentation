@@ -3,9 +3,10 @@ import { createContext, useContext, type Dispatch, type ReactNode, type SetState
 
 import { useState } from "react";
 import { Steps } from "../contants";
+import type { StepType } from "../types/step.type";
 
 export interface StepContextInterface {
-    step: string,
+    step: StepType,
     stepPosition: number
     nextStep: () => void
     previousStep: () => void
