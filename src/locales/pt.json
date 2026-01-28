@@ -84,7 +84,45 @@
             }
         },
         "conclusion": {
-            "title": "Construindo Pontes para o Futuro"
+            "title": "Construindo Pontes para o Futuro",
+            "cards": {
+                "colaboration": "Colaboração Japão-Brasil",
+                "research": "Oportunidades de Pesquisa Conjunta"
+            },
+            "team": {
+                "title": "Equipe do Projeto",
+                "members": {
+                    "daisy": {
+                        "name": "Daisy Fukuda",
+                        "role": "Pesquisadora na WAMA Diagnóstica"
+                    },
+                    "gustavo": {
+                        "name": "Gustavo Sales",
+                        "role": "Estagiário Desenvolvedor de Software no Itaú Unibanco"
+                    },
+                    "hugo": {
+                        "name": "Hugo Lima",
+                        "role": "Graduado da FATEC no Curso de Análise e Desenvolv. de Sistemas"
+                    },
+                    "nicolas": {
+                        "name": "Nicolas Takeshi",
+                        "role": "Diploma Técnico em Mecatrônica na Escola Tralala"
+                    },
+                    "priscila": {
+                        "name": "Priscila Oyama",
+                        "role": "Médica Endocrinologista no Hospital Albert Einstein"
+                    },
+                    "raquel": {
+                        "name": "Raquel Azevedo",
+                        "role": "Assistente BIM Júnior no Grupo ADN"
+                    },
+                    "teruko": {
+                        "name": "Teruko Arimori",
+                        "role": "Médica Residente na Secretaria de Saúde de Curitiba"
+                    }
+                }
+            },
+            "acknowledgment": "Obrigado pela atenção!"
         }
     }
 }

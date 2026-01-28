@@ -20,8 +20,16 @@ export const ConclusionView = () => {
 
     const team: Team[] = useMemo<Team[]>(() => [
         {
-            name: 'Gustavo Sales',
-            role: 'Estagiário no Itaú-Unibanco e Graduando da Fatec no curso de Análise e Desenvolv. de Sistemas',
+            name: t('conclusion.team.members.daisy.name'),
+            role: t('conclusion.team.members.daisy.role'),
+            imageUrl: '/public/images/daisy.png',
+            socials: {
+                instagram: 'https://www.instagram.com/daisyfukuda/'
+            }
+        },
+        {
+            name: t('conclusion.team.members.gustavo.name'),
+            role: t('conclusion.team.members.gustavo.role'),
             imageUrl: 'https://github.com/Gusales.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/devgusales/',
@@ -29,41 +37,48 @@ export const ConclusionView = () => {
             }
         },
         {
-            name: 'Gustavo Sales',
-            role: 'Estagiário no Itaú-Unibanco e Graduando da Fatec no curso de Análise e Desenvolv. de Sistemas',
-            imageUrl: 'https://github.com/Gusales.png',
+            name: t('conclusion.team.members.hugo.name'),
+            role: t('conclusion.team.members.hugo.role'),
+            imageUrl: '/public/images/hugo.png',
+            socials: {
+                linkedin: 'https://www.linkedin.com/in/hugo-lima-240ab6209/',
+            }
+        },
+        {
+            name: t('conclusion.team.members.nicolas.name'),
+            role: t('conclusion.team.members.nicolas.role'),
+            imageUrl: 'https://github.com/GusalesFATEC.png',
+            socials: {
+                instagram: 'https://www.instagram.com/nicolastaniguti/'
+            }
+        },
+        {
+            name: t('conclusion.team.members.priscila.name'),
+            role: t('conclusion.team.members.priscila.role'),
+            imageUrl: '/public/images/priscila.png',
+            socials: {
+                linkedin: 'https://www.linkedin.com/in/priscila-o-a41288157',
+                instagram: 'https://www.instagram.com/drapriscilaendocrino/'
+            }
+        },
+        {
+            name: t('conclusion.team.members.raquel.name'),
+            role: t('conclusion.team.members.raquel.role'),
+            imageUrl: 'https://github.com/GusalesFATEC.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/devgusales/',
                 instagram: 'https://www.instagram.com/devgusales/'
             }
         },
         {
-            name: 'Gustavo Sales',
-            role: 'Estagiário no Itaú-Unibanco e Graduando da Fatec no curso de Análise e Desenvolv. de Sistemas',
-            imageUrl: 'https://github.com/Gusales.png',
+            name: t('conclusion.team.members.teruko.name'),
+            role: t('conclusion.team.members.teruko.role'),
+            imageUrl: '/public/images/teruko.png',
             socials: {
-                linkedin: 'https://www.linkedin.com/in/devgusales/',
-                instagram: 'https://www.instagram.com/devgusales/'
+                linkedin: 'https://www.linkedin.com/in/teruko-arimori/',
+                instagram: 'https://www.instagram.com/arimori_teruko/'
             }
         },
-        {
-            name: 'Gustavo Sales',
-            role: 'Estagiário no Itaú-Unibanco e Graduando da Fatec no curso de Análise e Desenvolv. de Sistemas',
-            imageUrl: 'https://github.com/Gusales.png',
-            socials: {
-                linkedin: 'https://www.linkedin.com/in/devgusales/',
-                instagram: 'https://www.instagram.com/devgusales/'
-            }
-        },
-        {
-            name: 'Gustavo Sales',
-            role: 'Estagiário no Itaú-Unibanco e Graduando da Fatec no curso de Análise e Desenvolv. de Sistemas',
-            imageUrl: 'https://github.com/Gusales.png',
-            socials: {
-                linkedin: 'https://www.linkedin.com/in/devgusales/',
-                instagram: 'https://www.instagram.com/devgusales/'
-            }
-        }
     ], [t])
 
     return (
@@ -86,21 +101,23 @@ export const ConclusionView = () => {
             <section className="grid md:grid-cols-2 gap-6 mb-5 w-full">
                 <article className="bg-white/60 p-4 md:p-8 shadow w-full text-center">
                     <h3 className="text-2xl text-red-500 text-center">
-                        Colaboração Brasil-Japão
+                        { t('conclusion.cards.colaboration') }
                     </h3>
                 </article>
                 <article className="bg-white/60 p-4 md:p-8 shadow w-full text-center">
                     <h3 className="text-2xl text-red-500 text-center">
-                        Oportunidades de Pesquisa Conjunta
+                        { t('conclusion.cards.research') }
                     </h3>
                 </article>
             </section>
 
             <div className="w-full text-center">
-                <h2 className="text-3xl text-gray-500 text-center">Equipe do Projeto</h2>
+                <h2 className="text-3xl text-gray-500 text-center">
+                    { t('conclusion.title') }
+                </h2>
             </div>
 
-            <section className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {
                     team.map((member) => (
                         <article
@@ -119,16 +136,21 @@ export const ConclusionView = () => {
 
                             <nav>
                                 <ul className="flex gap-2 mt-5">
+                                    { member.socials.instagram ? (
                                     <li>
                                         <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer">
                                             <Instagram className="w-6 h-6 hover:scale-110 transition-all hover:text-red-500" />
                                         </a>
                                     </li>
+                                    ) : (<></>) }
+                                    { member.socials.linkedin ? (
                                     <li>
                                         <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer">
                                             <Linkedin className="w-6 h-6 hover:scale-110 transition-all hover:text-red-500" />
                                         </a>
                                     </li>
+                                        
+                                    ) : (<></>) }
                                 </ul>
                             </nav>
                         </article>
@@ -137,7 +159,9 @@ export const ConclusionView = () => {
             </section>
 
             <div className="bg-white/60 w-full p-4 md:p-8 shadow text-centerx">
-                <p className="text-3xl text-gray-500 text-center">Obrigado pela Atenção!</p>
+                <p className="text-3xl text-gray-500 text-center">
+                    { t('conclusion.acknowledgment') }
+                </p>
             </div>
         </PresentationSection>
     )

@@ -84,7 +84,45 @@
             }
         },
         "conclusion": {
-            "title": "Building Bridges to the Future"
+            "title": "Building Bridges to the Future",
+            "cards": {
+                "colaboration": "Japan-Brazil Collaboration",
+                "research": "Opportunities for Joint Research"
+            },
+            "team": {
+                "members": {
+                    "title": "Project Team",
+                    "daisy": {
+                        "name": "Daisy Fukuda",
+                        "role": "Researcher at WAMA Diagnóstica"
+                    },
+                    "gustavo": {
+                        "name": "Gustavo Sales",
+                        "role": "Software Development Intern at Itaú Unibanco"
+                    },
+                    "hugo": {
+                        "name": "Hugo Lima",
+                        "role": "FATEC Graduate in Systems Analysis and Development"
+                    },
+                    "nicolas": {
+                        "name": "Nicolas Takeshi",
+                        "role": "Technical Diploma in Mechatronics from Escola Tralala"
+                    },
+                    "priscila": {
+                        "name": "Priscila Oyama",
+                        "role": "Endocrinologist at Hospital Albert Einstein"
+                    },
+                    "raquel": {
+                        "name": "Raquel Azevedo",
+                        "role": "Junior BIM Assistant at ADN Group"
+                    },
+                    "teruko": {
+                        "name": "Teruko Arimori",
+                        "role": "Medical Resident at the Curitiba Health Department"
+                    }
+                }
+            },
+            "acknowledgment": "Thank you for your attention!"
         }
     }
 }
