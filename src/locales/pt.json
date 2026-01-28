@@ -3,7 +3,12 @@
         "introduction": {
             "title": "Educação, Ciência e Tecnologia no Brasil",
             "subTitle": "Uma Jornada de Inovação e Desenvolvimento",
-            "action": "Bem-vindo"
+            "action": "Bem-vindo",
+            "themes": {
+                "education": "Educação",
+                "science": "Ciência",
+                "technology": "Tecnologia"
+            }
         },
         "education": {
             "title": "Sistema Educacional Brasileiro",

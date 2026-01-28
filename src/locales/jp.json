@@ -3,7 +3,12 @@
         "introduction": {
             "title": "ブラジルの教育、科学、技術",
             "subTitle": "革新と発展の旅路",
-            "action": "ようこそ"
+            "action": "ようこそ",
+            "themes": {
+                "education": "教育",
+                "science": "科学",
+                "technology": "技術"
+            }
         },
         "education": {
             "title": "ブラジルの教育システム",

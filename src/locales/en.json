@@ -3,7 +3,12 @@
         "introduction": {
             "title": "Education, Science and Technology in Brazil",
             "subTitle": "A Journey of Innovation and Development",
-            "action": "Welcome"
+            "action": "Welcome",
+            "themes": {
+                "education": "Education",
+                "science": "Science",
+                "technology": "Technology"
+            }
         },
         "education": {
             "title": "Brazilian Educational System",
