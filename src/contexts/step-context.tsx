@@ -56,7 +56,7 @@ export const StepContextProvider = ({ children }: { children: ReactNode }) => {
 
     function nextStep() {
         setStep((current) => {
-            if (current === 6) return current;
+            if (current === Steps.length) return current;
             const newStep = current += 1;
             webSocket.current?.send(JSON.stringify(newStep))
             return newStep;
@@ -65,7 +65,7 @@ export const StepContextProvider = ({ children }: { children: ReactNode }) => {
 
     function previousStep() {
         setStep((current) => {
-            if (current === 1) return current;
+            if (current === 0) return current;
             const newStep = current -= 1;
             webSocket.current?.send(JSON.stringify(newStep))
             return newStep;

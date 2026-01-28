@@ -1,6 +1,5 @@
 import { KoiBackground } from "../../components/koi";
 import { SelectLanguage } from "../../components/select-language/index.tsx";
-import { SelectStep } from "../../components/select-step/index.tsx";
 import { useStep } from "../../contexts/step-context.tsx";
 import { ConclusionView } from "./conclusion-view.tsx";
 import { DefaultView } from "./default-view.tsx";
@@ -38,10 +37,7 @@ export const PublicView = () => {
     return (
         <div className="min-h-screen bg-amber-50 relative overflow-hidden">
             <KoiBackground />
-
-            {/* Only dev */}
             <SelectLanguage />
-            <SelectStep />
             {render()}
         </div>
     )
