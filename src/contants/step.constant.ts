@@ -1,4 +1,5 @@
 export const Steps = [
+    'Início',
     'Introdução',
     'Sistema Educacional',
     'Universidades',

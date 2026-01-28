@@ -2,6 +2,7 @@ import { KoiBackground } from "../../components/koi";
 import { SelectLanguage } from "../../components/select-language/index.tsx";
 import { SelectStep } from "../../components/select-step/index.tsx";
 import { useStep } from "../../contexts/step-context.tsx";
+import { ConclusionView } from "./conclusion-view.tsx";
 import { EducationView } from "./education-view.tsx";
 import { EngenieeringView } from "./engineering-view.tsx";
 import { IntroductionView } from "./introduction-view.tsx";
@@ -13,21 +14,21 @@ export const PublicView = () => {
     const { step, stepPosition } = useStep()
 
     const render = () => {
-        switch(stepPosition) {
-            case 0:
-                return <IntroductionView />
+        switch (stepPosition) {
             case 1:
-                return <EducationView />
+                return <IntroductionView />
             case 2:
-                return <UniversityView />
+                return <EducationView />
             case 3:
-                return <ScienceView />
+                return <UniversityView />
             case 4:
-                return <EngenieeringView />
+                return <ScienceView />
             case 5:
-                return <TechnologyView />
+                return <EngenieeringView />
             case 6:
-                return <h1>{step}</h1>
+                return <TechnologyView />
+            case 7:
+                return <ConclusionView />
             default:
                 return <h1>texto padrão</h1>
         }
@@ -40,7 +41,7 @@ export const PublicView = () => {
             {/* Only dev */}
             <SelectLanguage />
             <SelectStep />
-            { render() }
+            {render()}
         </div>
     )
 }
