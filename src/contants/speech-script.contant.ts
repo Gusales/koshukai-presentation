@@ -11,6 +11,10 @@ type Script = {
 }
 
 export const SpeechScripts: Record<StepType, Speech> = {
+    'Início': {
+        presenter: "Gustavo Sales",
+        script: []
+    },
     'Introdução': {
         presenter: "Gustavo",
         script: [
