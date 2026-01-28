@@ -3,6 +3,7 @@ import { SelectLanguage } from "../../components/select-language/index.tsx";
 import { SelectStep } from "../../components/select-step/index.tsx";
 import { useStep } from "../../contexts/step-context.tsx";
 import { ConclusionView } from "./conclusion-view.tsx";
+import { DefaultView } from "./default-view.tsx";
 import { EducationView } from "./education-view.tsx";
 import { EngenieeringView } from "./engineering-view.tsx";
 import { IntroductionView } from "./introduction-view.tsx";
@@ -11,7 +12,7 @@ import { TechnologyView } from "./technology-view.tsx";
 import { UniversityView } from "./university-view.tsx";
 
 export const PublicView = () => {
-    const { step, stepPosition } = useStep()
+    const { stepPosition } = useStep()
 
     const render = () => {
         switch (stepPosition) {
@@ -30,7 +31,7 @@ export const PublicView = () => {
             case 7:
                 return <ConclusionView />
             default:
-                return <h1>texto padrão</h1>
+                return <DefaultView />
         }
     }
 
