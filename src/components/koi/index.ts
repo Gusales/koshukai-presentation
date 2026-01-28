@@ -1,2 +1,2 @@
-export * from './koi-background'
-export * from './koi-svg'
+export * from './koi-background';
+
