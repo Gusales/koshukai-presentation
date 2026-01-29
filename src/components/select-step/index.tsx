@@ -2,12 +2,12 @@ import { Steps } from "../../contants"
 import { useStep } from "../../contexts/step-context"
 
 export const SelectStep = () => {
-    const { step, setStep } = useStep()
+    const { step, handleSetStep } = useStep()
 
     function handleChangeStep(value: string) {
         const valueToNumber = Number(value)
 
-        setStep(valueToNumber || 0)
+        handleSetStep(valueToNumber || 0)
     }
 
     return (
