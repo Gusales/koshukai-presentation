@@ -14,6 +14,10 @@
             "title": "ブラジルの教育システム",
             "subTitle": "4段階の教育システム",
             "action": "地域・経済格差による教育アクセスの課題",
+            "stats": {
+                "students": "8百万人以上の大学生が在籍",
+                "universities": "2,600以上の高等教育機関"
+            },
             "preschool": {
                 "title": "幼児教育",
                 "description": "0〜5歳 (5年間)",

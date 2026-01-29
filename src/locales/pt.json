@@ -14,6 +14,10 @@
             "title": "Sistema Educacional Brasileiro",
             "subTitle": "O sistema educacional brasileiro é abrangente, oferecendo educação pública gratuita a todos os cidadãos",
             "action": "Desafios no Acesso Educacional por Disparidades Regionais e Econômicas",
+            "stats": {
+                "students": "Mais de 8 milhões de estudantes universitários matriculados",
+                "universities": "Mais de 2.600 instituições de ensino superior"
+            },
             "preschool": {
                 "title": "Educação Infantil (Pré-Escola)",
                 "description": "Idades 0-5 (5 anos)",

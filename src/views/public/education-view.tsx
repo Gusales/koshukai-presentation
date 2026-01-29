@@ -12,7 +12,7 @@ export const EducationView = () => {
     return (
         <PresentationSection key={step}>
             <div className="space-y-12 md:space-y-14">
-                <div className="max-w-6x1 w-full space-y-8">
+                <section className="max-w-6x1 w-full space-y-8">
                     <h1 className="text-4xl md:text-6xl text-center text-gray-800 mb-12">
                         { t('education.title') }
                     </h1>
@@ -20,7 +20,47 @@ export const EducationView = () => {
                     <p className="text-2xl text-gray-500 text-center max-w-3xl">
                         { t('education.subTitle') }
                     </p>
-                </div>
+                </section>
+
+                <section className="grid md:grid-cols-2 gap-6 p-6 bg-white/60 shadow rounded">
+                    <article className="relative w-full h-48 md:h-64 rounded-md overflow-hidden group">
+                        <figure className="absolute inset-0">
+                            <img 
+                                src="https://www.europeanbusinessreview.com/wp-content/uploads/2024/05/iStock-1131423516-1.jpg"
+                                alt="Koi Fish Art"
+                                className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+                                loading="lazy"
+                            />
+
+                            <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent" />
+                        </figure>
+
+                        <div className="absolute bottom-4 left-4 right-4 text-white">
+                            <p className="text-lg font-medium">
+                                { t('education.stats.students') }
+                            </p>
+                        </div>
+                    </article>
+
+                    <article className="relative w-full h-48 md:h-64 rounded-md overflow-hidden group">
+                        <figure className="absolute inset-0">
+                            <img 
+                                src="https://ufsj.edu.br/portal2-repositorio/Image/ascom/noticias/enade_ifessite.jpg"
+                                alt="Koi Fish Art"
+                                className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+                                loading="lazy"
+                            />
+
+                            <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent" />
+                        </figure>
+
+                        <div className="absolute bottom-4 left-4 right-4 text-white">
+                            <p className="text-lg font-medium">
+                                { t('education.stats.universities') }
+                            </p>
+                        </div>
+                    </article>
+                </section>
 
                 <Timeline />
 

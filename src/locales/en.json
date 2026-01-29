@@ -14,6 +14,10 @@
             "title": "Brazilian Educational System",
             "subTitle": "Brazil's education system is comprehensive, providing free public education to all citizens",
             "action": "Challenges in Educational Access Due to Regional and Economic Disparities",
+            "stats": {
+                "students": "Over 8 million university students enrolled",
+                "universities": "Over 2,600 higher education institutions"
+            },
             "preschool": {
                 "title": "Early Childhood",
                 "description": "Ages 0-5 (5 years)",
