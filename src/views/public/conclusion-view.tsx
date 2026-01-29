@@ -22,7 +22,7 @@ export const ConclusionView = () => {
         {
             name: t('conclusion.team.members.daisy.name'),
             role: t('conclusion.team.members.daisy.role'),
-            imageUrl: '/public/images/daisy.png',
+            imageUrl: '/images/daisy.png',
             socials: {
                 instagram: 'https://www.instagram.com/daisyfukuda/'
             }
@@ -39,7 +39,7 @@ export const ConclusionView = () => {
         {
             name: t('conclusion.team.members.hugo.name'),
             role: t('conclusion.team.members.hugo.role'),
-            imageUrl: '/public/images/hugo.png',
+            imageUrl: '/images/hugo.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/hugo-lima-240ab6209/',
             }
@@ -47,7 +47,7 @@ export const ConclusionView = () => {
         {
             name: t('conclusion.team.members.nicolas.name'),
             role: t('conclusion.team.members.nicolas.role'),
-            imageUrl: 'https://github.com/GusalesFATEC.png',
+            imageUrl: '/images/nicolas.png',
             socials: {
                 instagram: 'https://www.instagram.com/nicolastaniguti/'
             }
@@ -55,7 +55,7 @@ export const ConclusionView = () => {
         {
             name: t('conclusion.team.members.priscila.name'),
             role: t('conclusion.team.members.priscila.role'),
-            imageUrl: '/public/images/priscila.png',
+            imageUrl: '/images/priscila.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/priscila-o-a41288157',
                 instagram: 'https://www.instagram.com/drapriscilaendocrino/'
@@ -64,7 +64,7 @@ export const ConclusionView = () => {
         {
             name: t('conclusion.team.members.raquel.name'),
             role: t('conclusion.team.members.raquel.role'),
-            imageUrl: 'https://github.com/GusalesFATEC.png',
+            imageUrl: '/images/raquel.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/devgusales/',
                 instagram: 'https://www.instagram.com/devgusales/'
@@ -73,7 +73,7 @@ export const ConclusionView = () => {
         {
             name: t('conclusion.team.members.teruko.name'),
             role: t('conclusion.team.members.teruko.role'),
-            imageUrl: '/public/images/teruko.png',
+            imageUrl: '/images/teruko.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/teruko-arimori/',
                 instagram: 'https://www.instagram.com/arimori_teruko/'
