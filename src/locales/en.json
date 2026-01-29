@@ -99,8 +99,8 @@
                 "research": "Opportunities for Joint Research"
             },
             "team": {
+                "title": "Project Team",
                 "members": {
-                    "title": "Project Team",
                     "daisy": {
                         "name": "Daisy Fukuda",
                         "role": "Forensic Expert at São Paulo Forensic Police"

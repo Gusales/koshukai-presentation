@@ -113,7 +113,7 @@ export const ConclusionView = () => {
 
             <div className="w-full text-center">
                 <h2 className="text-3xl text-gray-500 text-center">
-                    { t('conclusion.title') }
+                    { t('conclusion.team.title') }
                 </h2>
             </div>
 
