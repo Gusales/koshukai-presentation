@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import { createContext, useContext, useEffect, useRef, type Dispatch, type ReactNode, type SetStateAction } from "react";
+import { createContext, useContext, useEffect, useRef, type ReactNode } from "react";
 
 import { useState } from "react";
 import { Steps } from "../contants";
@@ -11,7 +11,7 @@ export interface StepContextInterface {
     stepPosition: number
     nextStep: () => void
     previousStep: () => void
-    setStep: Dispatch<SetStateAction<number>>
+    handleSetStep: (step: number) => void
 }
 
 export const StepContext = createContext<StepContextInterface>({} as StepContextInterface)
@@ -72,10 +72,15 @@ export const StepContextProvider = ({ children }: { children: ReactNode }) => {
         })
     }
 
+    function handleSetStep(step: number) {
+        setStep(step)
+        webSocket.current?.send(JSON.stringify(step))
+    }
+
     const value: StepContextInterface = {
         step: Steps[step],
         stepPosition: step,
-        setStep,
+        handleSetStep,
         connected: isReady,
         nextStep,
         previousStep

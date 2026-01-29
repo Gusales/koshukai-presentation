@@ -5,11 +5,7 @@ import { getToken, isAuthenticated } from "../../lib/auth"
 import { LoginView } from "./login-view"
 
 export const AdminView = () => {
-    const { step, setStep } = useStep()
-
-    function handleSetStep(stepIndex: number) {
-        setStep(stepIndex)
-    }
+    const { step, handleSetStep } = useStep()
 
     const adminToken = getToken()
 
