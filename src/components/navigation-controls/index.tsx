@@ -12,7 +12,7 @@ export function NavigationControls() {
   const hasPrevious = currentIndex > 0;
   const hasNext = currentIndex < Steps.length - 1;
 
-  if (!isAdmin || connected) {
+  if (!isAdmin && connected) {
     return null;
   }
 
