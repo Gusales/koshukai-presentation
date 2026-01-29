@@ -11,23 +11,17 @@ export const EducationView = () => {
 
     return (
         <PresentationSection key={step}>
-            <div className="space-y-12 md:space-y-14">
-                <section className="max-w-6x1 w-full space-y-8">
-                    <h1 className="text-4xl md:text-6xl text-center text-gray-800 mb-12">
-                        { t('education.title') }
-                    </h1>
+            <div>
+                <h1 className="text-4xl md:text-6xl text-center text-gray-800 mb-12">
+                    { t('education.title') }
+                </h1>
 
-                    <p className="text-2xl text-gray-500 text-center max-w-3xl">
-                        { t('education.subTitle') }
-                    </p>
-                </section>
-
-                <section className="grid md:grid-cols-2 gap-6 p-6 bg-white/60 shadow rounded">
+                <section className="grid md:grid-cols-2 gap-6 p-6 bg-white/60 shadow rounded mb-12 md:mb-14">
                     <article className="relative w-full h-48 md:h-64 rounded-md overflow-hidden group">
                         <figure className="absolute inset-0">
                             <img 
-                                src="https://www.europeanbusinessreview.com/wp-content/uploads/2024/05/iStock-1131423516-1.jpg"
-                                alt="Koi Fish Art"
+                                src="/images/assets/education/estudantes-universitarios.jpg"
+                                alt="university students"
                                 className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
                                 loading="lazy"
                             />
@@ -61,6 +55,14 @@ export const EducationView = () => {
                         </div>
                     </article>
                 </section>
+
+                <div className="w-full mx-auto bg-white/60 p-6 rounded shadow">
+                    <div className="max-w-3xl mx-auto">
+                        <p className="text-2xl text-gray-500 text-center">
+                            { t('education.subTitle') }
+                        </p>                        
+                    </div>
+                </div>
 
                 <Timeline />
 
@@ -125,7 +127,7 @@ export const Timeline = () => {
         <div className="relative overflow-hidden">
             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-[#d4af37]/30 transform -translate-x-1/2"/>
 
-            <div className="space-y-12 md:space-y-16">
+            <div className="grid gap-12 md:gap-16 mt-12 md:mt-16">
                 {
                     itens.map((item, i) => (
                         <TimelineItem item={item} index={i}  />
