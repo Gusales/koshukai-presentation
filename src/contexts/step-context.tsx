@@ -23,7 +23,7 @@ export const StepContextProvider = ({ children }: { children: ReactNode }) => {
 
     useEffect(() => {
         function connect() {
-            const webSocketUrl = "ws://127.0.1.1:8756"
+            const webSocketUrl: string = import.meta.env.VITE_WEBSOCKET_SERVER_URL || "ws://127.0.1.1:8756" // ONLY LOCAL
             try {
                 const ws = new WebSocket(webSocketUrl)
 
