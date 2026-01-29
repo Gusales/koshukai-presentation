@@ -11,27 +11,33 @@ export const TechnologyView = () => {
     const links = useMemo(() => [
         {
             name: t('technology.links.space'),
-            link: 'https://www.gov.br/inpe/pt-br'
+            link: 'https://www.gov.br/inpe/pt-br',
+            image: 'https://s2.glbimg.com/7U9aViIBGhVHLPhQDlYkJOtLAjs=/e.glbimg.com/og/ed/f/original/2019/07/23/011-lit_interior.jpg'
         },
         {
             name: t('technology.links.pix'),
-            link: 'https://www.bcb.gov.br/estabilidadefinanceira/pix'
+            link: 'https://www.bcb.gov.br/estabilidadefinanceira/pix',
+            image: 'https://i.pinimg.com/736x/01/9a/2d/019a2d16277d159cd2ef1298a4c60ab8.jpg'
         },
         {
             name: t('technology.links.curitiba'),
-            link: 'https://www.curitiba.pr.gov.br/'
+            link: 'https://www.curitiba.pr.gov.br/',
+            image: 'https://mid-noticias.curitiba.pr.gov.br/2023/capa/00394122.jpg'
         },
         {
             name: t('technology.links.superpc'),
-            link: 'https://www.cptec.inpe.br/'
+            link: 'https://www.cptec.inpe.br/',
+            image: 'https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2025/12/supercomputador-jaci-comeca-a-operar-no-enfrentamento-a-desafios-climaticos-brasileiros/whatsapp-image-2025-12-11-at-17-37-10-2.jpeg/@@images/cefa2e03-36a6-4fab-bfc3-04e07ecc20fe.jpeg'
         },
         {
             name: t('technology.links.scala'),
-            link: 'https://scaladatacenters.com/'
+            link: 'https://scaladatacenters.com/',
+            image: '/images/assets/engenieer/scala-datacenters.png'
         },
         {
             name: t('technology.links.mecatronica'),
-            link: 'https://www.educamaisbrasil.com.br/educacao/carreira/tecnico-em-mecatronica-e-uma-das-profissoes-mais-valorizadas-no-mercado'
+            link: 'https://www.educamaisbrasil.com.br/educacao/carreira/tecnico-em-mecatronica-e-uma-das-profissoes-mais-valorizadas-no-mercado',
+            image: 'https://static.portaldaindustria.com.br/portaldaindustria/noticias/media/imagem_plugin/jpl_29ZCcaZ.jpg'
         },
     ], [t])
 
@@ -40,11 +46,23 @@ export const TechnologyView = () => {
                 <h1 className="text-4xl md:text-6xl text-center text-gray-800 mb-12">{ t('technology.title') }</h1>
 
                 <section className="w-full grid md:grid-cols-2 md:grid-rows-3 gap-5">
-                    { links.map(({ link, name }, index) => (
-                        <a href={link} key={index} className="flex items-center justify-between bg-white/60 backdrop-blur-sm rounded py-4 px-6 shadow hover:shadow-md text-lg md:text-xl transition-all" target="_blank" rel="noopener noreferrer">
-                            {name}
+                    { links.map(({ link, name, image }, index) => (
+                        <a href={link} key={index} target="_blank" rel="noopener noreferrer">
+                            <article className="bg-white/60 backdrop-blur-sm rounded py-4 px-6 space-y-4 shadow hover:shadow-md text-lg md:text-xl transition-all group h-full">
+                                    <figure className="relative w-full h-48 rounded-md overflow-hidden">
+                                        <img 
+                                            src={image} alt="" 
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+                                        />
+                                        <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
+                                    </figure>
 
-                            <ExternalLink className="w-6 h-6 text-red-500 shrink-0 mt-0.5" />
+                                    <div className="flex items-center justify-between group-hover:underline underline-offset-2">
+                                        {name}
+
+                                        <ExternalLink className="w-6 h-6 text-red-500 shrink-0 mt-0.5" />
+                                    </div>
+                            </article>
                         </a>
                     )) }
                 </section>
