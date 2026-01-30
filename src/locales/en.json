@@ -135,6 +135,10 @@
         },
         "start": {
             "title": "Asebex's Koshukai (2026)"
+        },
+        "navigation": {
+            "next": "Next",
+            "previous": "Previous"
         }
     }
 }

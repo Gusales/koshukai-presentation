@@ -135,6 +135,10 @@
         },
         "start": {
             "title": "Asebexの講習会"
+        },
+        "navigation": {
+            "next": "次へ",
+            "previous": "前へ"
         }
     }
 }

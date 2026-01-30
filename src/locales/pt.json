@@ -135,6 +135,10 @@
         },
         "start": {
             "title": "Koshukai 2026 (Asebex)"
+        },
+        "navigation": {
+            "next": "Próximo",
+            "previous": "Anterior"
         }
     }
 }

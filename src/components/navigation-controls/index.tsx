@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Steps } from '../../contants';
 import { useStep } from '../../contexts/step-context';
 
 export function NavigationControls() {
   const { step, nextStep, previousStep } = useStep();
+  const { t } = useTranslation()
 
   const currentIndex = Steps.indexOf(step);
   const hasPrevious = currentIndex > 0;
@@ -26,7 +28,7 @@ export function NavigationControls() {
       >
         <ChevronLeft className="w-5 h-5" />
         <span className="text-sm hidden sm:inline">
-          Anterior
+          { t('navigation.previous') }
         </span>
       </motion.button>
 
@@ -60,7 +62,7 @@ export function NavigationControls() {
         whileTap={hasNext ? { scale: 0.95 } : {}}
       >
         <span className="text-sm hidden sm:inline">
-          Próximo
+          { t('navigation.next') }
         </span>
         <ChevronRight className="w-5 h-5" />
       </motion.button>
