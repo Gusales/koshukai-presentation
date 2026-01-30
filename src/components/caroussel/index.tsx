@@ -1,6 +1,6 @@
 import { AnimatePresence, motion, type Variants } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { useCallback, useMemo, useState } from "react"
+import { useCallback, useEffect, useMemo, useState } from "react"
 
 interface TimelineCarouselProps {
   images: string[]
@@ -41,12 +41,10 @@ export const TimeLineCarousel = ({ images, itemId, itemTitle }: TimelineCarousel
   }
 
   const stopBubbling = useCallback((e: React.SyntheticEvent) => {
-    // evita o clique subir pro <a> pai
     e.stopPropagation()
   }, [])
 
   const stopLinkAndBubbling = useCallback((e: React.SyntheticEvent) => {
-    // evita abrir o link do <a> pai
     e.preventDefault()
     e.stopPropagation()
   }, [])
@@ -69,12 +67,22 @@ export const TimeLineCarousel = ({ images, itemId, itemTitle }: TimelineCarousel
     [carouselIndex]
   )
 
+  useEffect(() => {
+    if (safeImages.length <= 1) return
+
+    const interval = setInterval(() => {
+      setCarouselDirection(1)
+      setCarouselIndex((prev) => (prev + 1) % safeImages.length)
+    }, 2500) // <-- tempo aqui
+
+    return () => clearInterval(interval)
+  }, [safeImages.length])
+
   if (!safeImages || safeImages.length === 0) return null
 
   return (
     <div
       className="relative h-48 md:h-64 overflow-hidden rounded-md ring-4 ring-[#d4af37]/20"
-      // captura primeiro e bloqueia pro link não receber “press/click”
       onClickCapture={stopBubbling}
       onMouseDownCapture={stopBubbling}
       onTouchStartCapture={stopBubbling}
