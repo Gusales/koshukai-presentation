@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useEffect, useRef, type ReactNode } from "react";
 
@@ -51,7 +52,7 @@ export const StepContextProvider = ({ children }: { children: ReactNode }) => {
             }
         }
 
-        connect()
+        // connect()
     }, [])
 
     function nextStep() {

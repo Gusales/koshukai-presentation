@@ -4,17 +4,11 @@ import { Steps } from '../../contants';
 import { useStep } from '../../contexts/step-context';
 
 export function NavigationControls() {
-  const { step, nextStep, previousStep, connected } = useStep();
-
-  const isAdmin = Boolean(localStorage.getItem('ADMIN_TOKEN'))
+  const { step, nextStep, previousStep } = useStep();
 
   const currentIndex = Steps.indexOf(step);
   const hasPrevious = currentIndex > 0;
   const hasNext = currentIndex < Steps.length - 1;
-
-  if (!isAdmin && connected) {
-    return null;
-  }
 
   return (
     <div className="fixed bottom-6 left-6 z-50 flex items-center gap-3">

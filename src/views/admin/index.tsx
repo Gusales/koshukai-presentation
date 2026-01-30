@@ -1,4 +1,3 @@
-import { NavigationControls } from "../../components/navigation-controls"
 import { SpeechScripts, Steps } from "../../contants"
 import { useStep } from "../../contexts/step-context"
 import { getToken, isAuthenticated } from "../../lib/auth"
@@ -45,8 +44,6 @@ export const AdminView = () => {
                                 )
                             }) }
                         </div>
-
-                        <NavigationControls />
                     </section>
 
                     <section className="bg-white/60 rounded shadow p-3">
