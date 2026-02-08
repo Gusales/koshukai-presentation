@@ -1,4 +1,4 @@
- 
+
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useEffect, useRef, type ReactNode } from "react";
 
@@ -59,7 +59,7 @@ export const StepContextProvider = ({ children }: { children: ReactNode }) => {
         setStep((current) => {
             if (current === Steps.length) return current;
             const newStep = current += 1;
-            webSocket.current?.send(JSON.stringify(newStep))
+            if (isReady) webSocket.current?.send(JSON.stringify(newStep))
             return newStep;
         })
     }
@@ -68,7 +68,7 @@ export const StepContextProvider = ({ children }: { children: ReactNode }) => {
         setStep((current) => {
             if (current === 0) return current;
             const newStep = current -= 1;
-            webSocket.current?.send(JSON.stringify(newStep))
+            if (isReady) webSocket.current?.send(JSON.stringify(newStep))
             return newStep;
         })
     }
@@ -89,7 +89,7 @@ export const StepContextProvider = ({ children }: { children: ReactNode }) => {
 
     return (
         <StepContext value={value}>
-            { children }
+            {children}
         </StepContext>
     )
 }
