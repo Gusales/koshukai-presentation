@@ -66,8 +66,7 @@ export const ConclusionView = () => {
             role: t('conclusion.team.members.raquel.role'),
             imageUrl: '/images/raquel.png',
             socials: {
-                linkedin: 'https://www.linkedin.com/in/devgusales/',
-                instagram: 'https://www.instagram.com/devgusales/'
+                linkedin: 'https://www.linkedin.com/in/raquel-oliveira-azevedo-405b18274/',
             }
         },
         {
@@ -101,19 +100,19 @@ export const ConclusionView = () => {
             <section className="grid md:grid-cols-2 gap-6 mb-5 w-full">
                 <article className="bg-white/60 p-4 md:p-8 shadow w-full text-center">
                     <h3 className="text-2xl text-red-500 text-center">
-                        { t('conclusion.cards.colaboration') }
+                        {t('conclusion.cards.colaboration')}
                     </h3>
                 </article>
                 <article className="bg-white/60 p-4 md:p-8 shadow w-full text-center">
                     <h3 className="text-2xl text-red-500 text-center">
-                        { t('conclusion.cards.research') }
+                        {t('conclusion.cards.research')}
                     </h3>
                 </article>
             </section>
 
             <div className="w-full text-center">
                 <h2 className="text-3xl text-gray-500 text-center">
-                    { t('conclusion.team.title') }
+                    {t('conclusion.team.title')}
                 </h2>
             </div>
 
@@ -136,21 +135,21 @@ export const ConclusionView = () => {
 
                             <nav>
                                 <ul className="flex gap-2 mt-5">
-                                    { member.socials.instagram ? (
-                                    <li>
-                                        <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer">
-                                            <Instagram className="w-6 h-6 hover:scale-110 transition-all hover:text-red-500" />
-                                        </a>
-                                    </li>
-                                    ) : (<></>) }
-                                    { member.socials.linkedin ? (
-                                    <li>
-                                        <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer">
-                                            <Linkedin className="w-6 h-6 hover:scale-110 transition-all hover:text-red-500" />
-                                        </a>
-                                    </li>
-                                        
-                                    ) : (<></>) }
+                                    {member.socials.instagram ? (
+                                        <li>
+                                            <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer">
+                                                <Instagram className="w-6 h-6 hover:scale-110 transition-all hover:text-red-500" />
+                                            </a>
+                                        </li>
+                                    ) : (<></>)}
+                                    {member.socials.linkedin ? (
+                                        <li>
+                                            <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer">
+                                                <Linkedin className="w-6 h-6 hover:scale-110 transition-all hover:text-red-500" />
+                                            </a>
+                                        </li>
+
+                                    ) : (<></>)}
                                 </ul>
                             </nav>
                         </article>
@@ -160,7 +159,7 @@ export const ConclusionView = () => {
 
             <div className="bg-white/60 w-full p-4 md:p-8 shadow text-centerx">
                 <p className="text-3xl text-gray-500 text-center">
-                    { t('conclusion.acknowledgment') }
+                    {t('conclusion.acknowledgment')}
                 </p>
             </div>
         </PresentationSection>
