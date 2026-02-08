@@ -6,7 +6,6 @@ import { Steps } from "../../contants"
 
 interface Team {
     name: string
-    role: string
     imageUrl: string
     socials: {
         instagram?: string
@@ -21,7 +20,6 @@ export const ConclusionView = () => {
     const team: Team[] = useMemo<Team[]>(() => [
         {
             name: t('conclusion.team.members.daisy.name'),
-            role: t('conclusion.team.members.daisy.role'),
             imageUrl: '/images/daisy.png',
             socials: {
                 instagram: 'https://www.instagram.com/daisyfukuda/'
@@ -29,7 +27,6 @@ export const ConclusionView = () => {
         },
         {
             name: t('conclusion.team.members.gustavo.name'),
-            role: t('conclusion.team.members.gustavo.role'),
             imageUrl: 'https://github.com/Gusales.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/devgusales/',
@@ -38,7 +35,6 @@ export const ConclusionView = () => {
         },
         {
             name: t('conclusion.team.members.hugo.name'),
-            role: t('conclusion.team.members.hugo.role'),
             imageUrl: '/images/hugo.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/hugo-lima-240ab6209/',
@@ -46,7 +42,6 @@ export const ConclusionView = () => {
         },
         {
             name: t('conclusion.team.members.nicolas.name'),
-            role: t('conclusion.team.members.nicolas.role'),
             imageUrl: '/images/nicolas.png',
             socials: {
                 instagram: 'https://www.instagram.com/nicolastaniguti/'
@@ -54,7 +49,6 @@ export const ConclusionView = () => {
         },
         {
             name: t('conclusion.team.members.priscila.name'),
-            role: t('conclusion.team.members.priscila.role'),
             imageUrl: '/images/priscila.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/priscila-o-a41288157',
@@ -63,7 +57,6 @@ export const ConclusionView = () => {
         },
         {
             name: t('conclusion.team.members.raquel.name'),
-            role: t('conclusion.team.members.raquel.role'),
             imageUrl: '/images/raquel.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/raquel-oliveira-azevedo-405b18274/',
@@ -71,7 +64,6 @@ export const ConclusionView = () => {
         },
         {
             name: t('conclusion.team.members.teruko.name'),
-            role: t('conclusion.team.members.teruko.role'),
             imageUrl: '/images/teruko.png',
             socials: {
                 linkedin: 'https://www.linkedin.com/in/teruko-arimori/',
@@ -131,8 +123,6 @@ export const ConclusionView = () => {
                             </figure>
 
                             <p className="text-lg text-[#1a1a1a]">{member.name}</p>
-                            <p className="text-sm text-[#6e6e6e]">{member.role}</p>
-
                             <nav>
                                 <ul className="flex gap-2 mt-5">
                                     {member.socials.instagram ? (

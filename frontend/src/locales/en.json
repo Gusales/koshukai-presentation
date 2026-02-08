@@ -102,32 +102,25 @@
                 "title": "Project Team",
                 "members": {
                     "daisy": {
-                        "name": "Daisy Fukuda",
-                        "role": "Forensic Expert at São Paulo Forensic Police"
+                        "name": "Daisy Fukuda"
                     },
                     "gustavo": {
-                        "name": "Gustavo Sales",
-                        "role": "Software Development Intern at Itaú Unibanco"
+                        "name": "Gustavo Sales"
                     },
                     "hugo": {
-                        "name": "Hugo Lima",
-                        "role": "FATEC Graduate in Systems Analysis and Development"
+                        "name": "Hugo Lima"
                     },
                     "nicolas": {
-                        "name": "Nicolas Takeshi",
-                        "role": "Technical Diploma in Mechatronics from Escola Tralala"
+                        "name": "Nicolas Takeshi"
                     },
                     "priscila": {
-                        "name": "Priscila Oyama",
-                        "role": "Endocrinologist at Hospital Albert Einstein"
+                        "name": "Priscila Oyama"
                     },
                     "raquel": {
-                        "name": "Raquel Azevedo",
-                        "role": "Junior BIM Assistant at ADN Group"
+                        "name": "Raquel Azevedo"
                     },
                     "teruko": {
-                        "name": "Teruko Arimori",
-                        "role": "Medical Resident at the Curitiba Health Department"
+                        "name": "Teruko Arimori"
                     }
                 }
             },
